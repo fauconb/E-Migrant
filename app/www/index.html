@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+    <!-- Ionic filter bar -->
+    <link rel="stylesheet" href="lib/ionic-filter-bar/dist/ionic.filter.bar.css">
+    <link rel="stylesheet" href="lib/ion-md-input/css/ion-md-input.css">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaGLookstc1-3QtXMxBvsU_a5mdR37uso&amp;libraries=places" type="text/javascript"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!--<script src="cordova.js"></script>-->
+
+    <!-- your app's js -->
+
+    <script src="scripts/app.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="lib/ionic-filter-bar/dist/ionic.filter.bar.js"></script>
+    <script src="lib/ion-md-input/js/ion-md-input.js"></script>
+
+    <script src="scripts/controllers/AppCtrl.js"></script>
+    <script src="scripts/controllers/ChatCtrl.js"></script>
+    <script src="scripts/controllers/ChatListCtrl.js"></script>
+    <script src="scripts/controllers/ChoiceCtrl.js"></script>
+    <script src="scripts/controllers/EngageCtrl.js"></script>
+    <script src="scripts/controllers/EngageFormCtrl.js"></script>
+    <script src="scripts/controllers/HelpCtrl.js"></script>
+    <script src="scripts/controllers/HelpFormCtrl.js"></script>
+    <script src="scripts/controllers/LoginCtrl.js"></script>
+    <script src="scripts/controllers/MessagesCtrl.js"></script>
+    <script src="scripts/controllers/NeedMapCtrl.js"></script>
+    <script src="scripts/controllers/ServiceMapCtrl.js"></script>
+    <script src="scripts/controllers/NeedListCtrl.js"></script>
+    <script src="scripts/controllers/SettingsCtrl.js"></script>
+    <script src="scripts/controllers/ServicesList.js"></script>
+    <script src="scripts/controllers/SignCtrl.js"></script>
+    <script src="scripts/controllers/ProfileCtrl.js"></script>
+    <script src="scripts/controllers/HomeCtrl.js"></script>
+    <script src="scripts/controllers/NewsCtrl.js"></script>
+    <script src="scripts/service/service.js"></script>
+  </head>
+
+  <body ng-app="app">
+    <ion-nav-view></ion-nav-view>
+
+
+        <script id="lang.html" type="text/ng-template">
+          <ion-modal-view>
+            <ion-header-bar>
+              <h1 class="title">Choix de la langue</h1>
+            </ion-header-bar>
+            <ion-content>
+                 <div class="list">
+                    <a ng-click="langChange('albanie')" class="item item-avatar" href="#">
+                      <img src="img/flag/ab.png">
+                      <h2 class="lang">Albanian</h2>
+                    </a>
+                    <a ng-click="langChange('arabe')" class="item item-avatar" href="#">
+                      <img src="img/flag/ar.png">
+                      <h2 class="lang">العربية</h2>
+                    </a>
+                    <a ng-click="langChange('bosnie')" class="item item-avatar" href="#">
+                      <img src="img/flag/bs.png">
+                      <h2 class="lang">Bosnian</h2>
+                    </a>
+                    <a ng-click="langChange('anglais')" class="item item-avatar" href="#">
+                      <img src="img/flag/en.png">
+                      <h2 class="lang">English</h2>
+                    </a>
+                    <a ng-click="langChange('iran')" class="item item-avatar" href="#">
+                      <img src="img/flag/ir.png">
+                      <h2 class="lang">Farsi</h2>
+                    </a>
+                    <a ng-click="langChange('france')" class="item item-avatar" href="#">
+                      <img src="img/flag/fr.png">
+                      <h2 class="lang">Français</h2>
+                    </a>
+                    <a ng-click="langChange('russian')" class="item item-avatar" href="#">
+                      <img src="img/flag/rs.png">
+                      <h2 class="lang">Russian</h2>
+                    </a>
+                    <a ng-click="langChange('serbian')" class="item item-avatar" href="#">
+                      <img src="img/flag/sb.png">
+                      <h2 class="lang">Serbian</h2>
+                    </a>
+                    <a ng-click="langChange('tigrinya')" class="item item-avatar" href="#">
+                      <img src="img/flag/tg.png">
+                      <h2 class="lang">Tigrinya</h2>
+                    </a>
+                    <a ng-click="langChange('turkey')" class="item item-avatar" href="#">
+                      <img src="img/flag/tk.png">
+                      <h2 class="lang">Turkey</h2>
+                    </a>
+                </div>
+            </ion-content>
+          </ion-modal-view>
+        </script>
+  </body>
+</html>

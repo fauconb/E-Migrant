@@ -1,0 +1,49 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-assertive">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close href="#/app/home">
+         <i class="fa fa-home"></i> {{ translate.news }}
+        </ion-item>
+        <ion-item menu-close href="#/app/service/list">
+         <i class="fa fa-star"></i> {{ translate.viewService }}
+        </ion-item>
+        <ion-item menu-close href="#/app/need/list">
+         <i class="fa fa-life-ring"></i> {{ translate.viewRequest }}
+        </ion-item>
+        <ion-item menu-close href="#/app/chat/list">
+         <i class="fa fa-bell"></i> {{ translate.notification }}
+          <span class="badge badge-assertive">1</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/profile">
+         <i class="fa fa-user"></i> {{ translate.profil }}
+        </ion-item>
+        <ion-item menu-close href="#/app/messages">
+         <i class="fa fa-envelope"></i> {{ translate.message }}
+        </ion-item>
+        <ion-item menu-close href="#/app/login">
+          <i class="fa fa-cogs"></i> {{ translate.setting }}
+        </ion-item>
+        <ion-item menu-close ng-click="openModal()">
+          <i class="fa fa-language"></i>{{ translate.changeLang }}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
